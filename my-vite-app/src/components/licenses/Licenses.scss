@@ -1,0 +1,40 @@
+// Licenses.scss
+
+.licenses {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Добавили перенос строк при необходимости */
+  padding: 20px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 100%; /* Занимает всю ширину, чтобы не влиять на горизонтальное выравнивание */
+  }
+
+  .license-item {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .license-image {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+/* EngineeringComponent.scss */
+
+.engineering-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.engineering-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.engineering-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.engineering-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.engineering-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.engineering-links-dropdown {
+  position: relative;
+}
+
+.engineering-dropdown-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.engineering-dropdown-button:hover {
+  background-color: #2980b9;
+}
+
+.engineering-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.engineering-dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+}
+
+.engineering-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.engineering-dropdown-content a:last-child {
+  // Убираем обводку под последней ссылкой
+  border-bottom: none;
+}

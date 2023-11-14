@@ -1,0 +1,83 @@
+/* ConstructionComponent.scss */
+
+.construction-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.construction-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.construction-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.construction-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.construction-links-dropdown {
+  position: relative;
+  margin-top: auto; /* Чтобы выровнять dropdown внизу карточки */
+}
+
+.construction-dropdown-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.construction-dropdown-button:hover {
+  background-color: #2980b9;
+}
+
+.construction-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.construction-dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.construction-dropdown-content a:hover {
+  background-color: #ddd;
+}

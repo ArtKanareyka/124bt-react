@@ -1,0 +1,68 @@
+/* Header.scss */
+
+.header {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.header-content {
+  margin: 0 auto;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1040px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 1rem;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.header-item {
+  margin-right: 1rem;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #000;
+  position: relative; /* Добавляем позицию для позиционирования псевдоэлемента */
+}
+
+.header-link:hover {
+  color: #3498db; /* Изменяем цвет при наведении */
+}
+
+.header-link::before {
+  content: ''; /* Создаем псевдоэлемент для создания подчеркивания */
+  position: absolute;
+  width: 100%; /* Растягиваем псевдоэлемент на всю ширину ссылки */
+  height: 2px; /* Устанавливаем высоту подчеркивания */
+  background-color: #3498db; /* Цвет подчеркивания */
+  bottom: 0; /* Размещаем подчеркивание внизу ссылки */
+  left: 0; /* Выравниваем псевдоэлемент относительно левого края ссылки */
+  visibility: hidden; /* Скрываем подчеркивание по умолчанию */
+  transform: scaleX(0); /* Начальное значение ширины подчеркивания */
+  transition: all 0.3s ease; /* Добавляем анимацию для плавного изменения ширины */
+}
+
+.header-link:hover::before {
+  visibility: visible; /* Показываем подчеркивание при наведении */
+  transform: scaleX(1); /* Расширяем подчеркивание при наведении */
+}
+
+@media (max-width: 1140px) {
+  .header {
+    padding: 1rem 20px;
+  }
+}
