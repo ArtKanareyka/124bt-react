@@ -13,19 +13,19 @@ interface License {
 const licenseData: License[] = [
   {
     id: 1,
-    image: '/sro-na-proektirovku-elektrosetey.jpg',
+    image: './sro-na-proektirovku-elektrosetey.jpg',
     title: 'Проектное СРО',
     text: 'Текст до 25 млн',
   },
   {
     id: 2,
-    image: '/svidetelstvo-na-proektirovku.jpg',
+    image: './svidetelstvo-na-proektirovku.jpg',
     title: 'Строительное СРО',
     text: 'до 60 млн',
   },
   {
     id: 3,
-    image: '/OPS-licenziya.jpg',
+    image: './OPS-licenziya.jpg',
     title: 'МЧС',
     text: '12 категорий',
   },

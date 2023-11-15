@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <div className="header-left">
           <img
             className="header-logo"
-            src="/favicon.png"
+            src="./favicon.png"
             alt="Логотип Базовые Технологии"
           />
           <a className="header-link" href="/">
