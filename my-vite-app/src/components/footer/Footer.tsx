@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="logo-container">
             <img
-              src="/bazovye-tehnologii-logo.png"
+              src="./bazovye-tehnologii-logo.png"
               alt="Логотип Базовые Технологии"
             />
           </div>
